@@ -1,74 +1,25 @@
 <?php
 include 'header.php';
-include 'db.php';
 
-$message = "";
-
-// ============================== FORM SUBMISSION LOGIC ==============================
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    // Sanitize and collect data
-    $customer_name     = trim($_POST['customer_name']);
-    $email             = trim($_POST['email']);
-    $phone             = trim($_POST['phone']);
-    $reservation_date  = $_POST['reservation_date'];
-    $reservation_time  = $_POST['reservation_time'];
-    $number_of_guests  = (int)$_POST['number_of_guests'];
-    $table_number      = (int)$_POST['table_number'];
-
-    // Basic validation
-    if (
-        empty($customer_name) ||
-        empty($email) ||
-        empty($phone) ||
-        empty($reservation_date) ||
-        empty($reservation_time) ||
-        $number_of_guests <= 0 ||
-        $table_number <= 0
-    ) {
-        $message = "<p class='alert alert-danger'>All fields are required and must be valid.</p>";
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $message = "<p class='alert alert-danger'>Invalid email format.</p>";
-    } else {
-        // Prepare statement to prevent SQL injection
-        $stmt = $conn->prepare("
-            INSERT INTO reservations 
-            (customer_name, email, phone, reservation_date, reservation_time, number_of_guests, table_number)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
-        ");
-
-        if ($stmt) {
-            $stmt->bind_param(
-                "sssssii",
-                $customer_name,
-                $email,
-                $phone,
-                $reservation_date,
-                $reservation_time,
-                $number_of_guests,
-                $table_number
-            );
-
-            if ($stmt->execute()) {
-                $message = "<p class='alert alert-success'>Reservation successfully created!</p>";
-            } else {
-                $message = "<p class='alert alert-danger'>Error: " . $stmt->error . "</p>";
-            }
-
-            $stmt->close();
-        } else {
-            $message = "<p class='alert alert-danger'>Database preparation failed: " . $conn->error . "</p>";
-        }
-    }
+if (isset($_GET['success'])) {
+    echo "<div class='alert alert-success text-center'>Reservation successfully created!</div>";
 }
 
-// Close connection
-$conn->close();
-?>
+if (isset($_GET['error'])) {
+    echo "<div class='alert alert-danger text-center'>All fields are required.</div>";
+}
 
+if (isset($_GET['invalidemail'])) {
+    echo "<div class='alert alert-danger text-center'>Invalid email format.</div>";
+}
+
+if (isset($_GET['dberror'])) {
+    echo "<div class='alert alert-danger text-center'>Database error occurred.</div>";
+}
+?>
 <!-- ============================== HTML FORM  ============================== -->
 <div class="container" style="margin-top:20px;">
-    <h2>Reserve a Table</h2>
+    <h2 class="text-center">Reserve a Table</h2>
 
     <?php
     if (!empty($message)) {
@@ -76,7 +27,10 @@ $conn->close();
     }
     ?>
 
-    <form action="reservations.php" method="POST">
+    <form action="process2.php" method="POST">
+        <div class='form-floating'>
+        <div class="row">
+            <div class="col">
         <div class="form-group">
             <label for="customer_name">Full Name:</label>
             <input type="text" name="customer_name" id="customer_name" class="form-control" required>
@@ -113,7 +67,9 @@ $conn->close();
         </div>
 
         <button type="submit" class="btn btn-primary">Reserve Table</button>
+</div>
+</div>
+</div>
     </form>
 </div>
-
 <?php include 'footer.php'; ?>
