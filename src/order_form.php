@@ -9,6 +9,7 @@
             <div class="col">
                 <label for="dish">Dish:</label>
                 <select class="form-control" name="dish">
+                    <option >Select Dish</option>
                     <option >Pizza</option>
                     <option >Salad</option>
                     <option >Cake</option>
