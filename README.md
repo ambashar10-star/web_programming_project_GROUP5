@@ -38,7 +38,7 @@ Include more detailed information about Feature 3 here. Provide links to related
 List the database tables that are part of your project. 
 
 - Table 1 (Created By): Table Name 
-- Table 2 (Created By): Table Name 
+- Table 2 (Created By Nevindi Rathukumarage): Order_list 
 - Table 3 (Created By): Table Name 
 
 > Include the ER Diagram of the database. 
