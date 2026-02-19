@@ -1,24 +1,38 @@
 <?php
-require_once 'db.php';
+include 'header.php';
+include 'db.php';
 
-if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
-    die("Invalid ID");
+if(!isset($_GET['id'])){
+die("No reservation selected");
 }
 
-$id = (int)$_GET['id'];
+$id = $_GET['id'];
 
-$stmt = $conn->prepare("DELETE FROM reservations WHERE table_number=?");
+/* DELETE AFTER CONFIRM */
+if(isset($_POST['confirm'])){
 
-if (!$stmt) {
-    die("Prepare failed: " . $conn->error);
-}
+mysqli_query($conn,"DELETE FROM reservations WHERE table_number='$id'");
 
-$stmt->bind_param("i", $id);
-$stmt->execute();
+echo "<div class='container mt-4'>";
+echo "<div class='alert alert-success'>Reservation deleted successfully.</div>";
+echo "<a href='update2.php' class='btn btn-primary'>See updated reservation list</a>";
+echo "</div>";
 
-$stmt->close();
+
 $conn->close();
-
-header("Location: read2.php");
 exit();
+}
 ?>
+
+<div class="container mt-4">
+<h3>Delete Reservation</h3>
+
+<p>Are you sure you want to delete reservation for table <b><?php echo $id; ?></b>?</p>
+
+<form method="post">
+<button type="submit" name="confirm" class="btn btn-danger">Yes, Delete</button>
+<a href="update2.php" class="btn btn-secondary">Cancel</a>
+</form>
+</div>
+
+
