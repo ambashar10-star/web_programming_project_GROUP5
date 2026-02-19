@@ -1,11 +1,11 @@
 <?php include 'header.php'; ?>
 <h1 class="text-center">Place Your Order:</h1>
-<form name="form" method="post" action="process.php">
+<form name="form" method="post" action="process.php" onsubmit="return validatingForm()">
     <div class='form-floating'>
          <div class="row">
             <div class="col">
                 <label for="table_number" >Table Number:</label>
-                <input type="number" class="form-control" name="table_number" min="1" required>
+                <input type="number" class="form-control" name="table_number">
             <div class="col">
                 <label for="dish">Dish:</label>
                 <select class="form-control" name="dish">
@@ -27,7 +27,7 @@
                 </select>
             <div class="col">
                 <label for="quantity">Quantity:</label>
-                <input type="number" class="form-control" id="" name="quantity" min="1" required>                    
+                <input type="number" class="form-control" id="" name="quantity">                    
             <br>
             <button type="submit" class="btn btn-primary" name="submit">Submit</button>
             </div>
