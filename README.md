@@ -64,7 +64,28 @@ Include more detailed information about Feature 2 here. Provide links to related
 
 Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
+- Information about Feature 3: The Review Management feature allows customers to make online reviews using a reserved table number. Customers can submit their review by using the table number that they selected when submitting the reservations form, and apart from that, they must give a rating between 1 to 5 , and give a comment . Once the customer submits the form, it is stored in the reviews table in MySQL. The admins can update, delete, and read the customer reviews if needed. This feature was implemented using PHP, MySQL, HTML, Bootstrap , following the CRUD structure.
+
+- links to related code files (github):
+-create1.php----> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/create1.php
+-delet1.php-----> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/delete1.php
+-process1.php---> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/process1.php
+-read1.php------> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/read1.php
+-update1.php----> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/update1.php
+-updatesingle1.php---> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/updatesingle1.php
+
+  
+- link to the feature (shell.hamk.fi):
+- create1.php---->http://shell.hamk.fi/~amk1010114/project/create1.php
+- delet1.php----->http://shell.hamk.fi/~amk1010114/project/delete1.php
+- process1.php--->http://shell.hamk.fi/~amk1010114/project/process1.php
+- read1.php------>http://shell.hamk.fi/~amk1010114/project/read1.php
+- update1.php---->http://shell.hamk.fi/~amk1010114/project/update1.php
+- updatesingle1.php---> http://shell.hamk.fi/~amk1010114/project/updatesingle1.php
+  
 ---
+
+
 
 ## Database Tables
 
@@ -100,8 +121,6 @@ List and describe any forms that have been created as part of your project. Incl
 -  Form Name: review.php
 -  Link to the related code file (github):  https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/review.php
 -  Link to the form (shell.hamk.fi):        http://shell.hamk.fi/~amk1010114/project/review.php
--  Validations Applied:                     https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/style.js
-
 
 ---
 
