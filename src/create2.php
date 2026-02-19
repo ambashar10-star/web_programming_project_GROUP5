@@ -26,7 +26,7 @@ echo "<div class='alert alert-success text-center'>Reservation created</div>";
 <form method="post">
 
 <div class="mb-3">
-<label class="form-label">Name</label>
+<label class="form-label">Full Name</label>
 <input type="text" name="customer_name" class="form-control" required>
 </div>
 
