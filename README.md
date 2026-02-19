@@ -19,7 +19,7 @@ In this section, list and describe the features or functionality that you are wo
 
 > Add features as required. 
 
-### Feature 1
+### Feature 1: Reservations Management 
 
 Include more detailed information about Feature 1 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
