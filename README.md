@@ -14,7 +14,7 @@
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
 - [ ] Feature 1 (Full Name: BASHAR ABDUL MUMIN): Title of the feature: Reservations Management 
-- [ ] Feature 2 (Full Name): Title of the feature.
+- [ ] Feature 2 (Full Name: Nevindi Rathukumarage): Title of the feature: Orders Management
 - [ ] Feature 3 (Full Name): Title of the feature.
 
 > Add features as required. 
