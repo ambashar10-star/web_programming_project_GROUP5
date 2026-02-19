@@ -8,6 +8,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/df96385b79.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="res_web.css">
+    <script src="script.js"></script>
     <link rel="icon" href="Images2/Logo7.jpg">
 </head>
 <body>
