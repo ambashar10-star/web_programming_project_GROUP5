@@ -53,10 +53,10 @@ List and describe any forms that have been created as part of your project. Incl
 
   
 - Form 2: (Created By Nevindi Rathukumarage)
-- Form Name: order_form.php
-- Link to the related code file (github): https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/order_form.php
-- Link to the form (https://shell.hamk.fi/~amk1005739/project/order_form.php).
-- Validations Applied: https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/style.js
+   Form Name: order_form.php
+   Link to the related code file (github): https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/order_form.php
+   Link to the form (https://shell.hamk.fi/~amk1005739/project/order_form.php).
+   Validations Applied: https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/style.js
 
   
 - Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
@@ -71,10 +71,8 @@ List any tables that you have created in the project work
 - Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
   
-- Table 2 (Created By Nevindi Rathukumarage)
-- Table Name: Order_list
-- Link to the related code file (github):https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/Order_list_mySQL
-- Link to the table (https://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_bbcap25_1&table=Order_list).
+- Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+
 
   
 - Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
