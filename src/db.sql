@@ -11,3 +11,14 @@ CREATE TABLE reservations (
     number_of_guests INT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Order Items Table
+CREATE TABLE Order_list(
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    table_number INT NOT NULL,
+    dish VARCHAR(150) NOT NULL,
+    quantity INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (table_number) REFERENCES reservations(table_number)
+    ON DELETE CASCADE
+);
