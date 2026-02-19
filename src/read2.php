@@ -1,51 +1,52 @@
 <?php
 include 'header.php';
-require_once 'db.php';
-
-$result = $conn->query("SELECT * FROM reservations ORDER BY reservation_date DESC");
+include 'db.php';
 ?>
 
 <div class="container mt-4">
-    <h2 class="text-center">All Reservations</h2>
-
-    <table class="table table-bordered mt-3">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Guests</th>
-                <th>Table</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-
-        <?php while($row = $result->fetch_assoc()): ?>
-            <tr>
-                <td><?= htmlspecialchars($row['customer_name']); ?></td>
-                <td><?= htmlspecialchars($row['email']); ?></td>
-                <td><?= htmlspecialchars($row['reservation_date']); ?></td>
-                <td><?= htmlspecialchars($row['reservation_time']); ?></td>
-                <td><?= htmlspecialchars($row['number_of_guests']); ?></td>
-                <td><?= htmlspecialchars($row['table_number']); ?></td>
-                <td>
-                    <a href="update2.php?id=<?= $row['table_number']; ?>" class="btn btn-warning btn-sm">Edit</a>
-                    <a href="delete2.php?id=<?= $row['table_number']; ?>" 
-                       class="btn btn-danger btn-sm"
-                       onclick="return confirm('Are you sure?');">
-                       Delete
-                    </a>
-                </td>
-            </tr>
-        <?php endwhile; ?>
-
-        </tbody>
-    </table>
-</div>
+<h2 class="text-center mb-4">All Reservations</h2>
 
 <?php
+$sql = "SELECT * FROM reservations";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+
+echo "<table class='table table-bordered'>
+<thead>
+<tr>
+<th>Table</th>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Date</th>
+<th>Time</th>
+<th>Guests</th>
+</tr>
+</thead><tbody>";
+
+while ($row = $result->fetch_assoc()) {
+
+echo "<tr>
+<td>".$row['table_number']."</td>
+<td>".$row['customer_name']."</td>
+<td>".$row['email']."</td>
+<td>".$row['phone']."</td>
+<td>".$row['reservation_date']."</td>
+<td>".$row['reservation_time']."</td>
+<td>".$row['number_of_guests']."</td>
+</tr>";
+}
+
+echo "</tbody></table>";
+
+} else {
+echo "No reservations found";
+}
+
 $conn->close();
-include 'footer.php';
 ?>
+</div>
+
+<?php include 'footer.php'; ?>
+
