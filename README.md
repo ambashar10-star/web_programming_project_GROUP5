@@ -37,7 +37,7 @@ Include more detailed information about Feature 3 here. Provide links to related
 
 List the database tables that are part of your project. 
 
-- Table 1 (Created By): Table Name 
+- Table 1 (Created By BASHAR ABDUL MUMIN): reservations 
 - Table 2 (Created By Nevindi Rathukumarage): Order_list 
 - Table 3 (Created By Ahnaf Rahul):reviews
 
@@ -49,7 +49,9 @@ List the database tables that are part of your project.
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-- Form 1 (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 1 (Created By Bashar Abdul Mumin): Form Name:
+  -  Link to the related code file (github): https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/reservations.php
+  -  Link to the form (shell.hamk.fi). | Validations Applied
 
   
 - Form 2: (Created By Nevindi Rathukumarage)
