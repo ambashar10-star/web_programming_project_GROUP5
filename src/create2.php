@@ -56,7 +56,7 @@ echo "<div class='alert alert-success text-center'>Reservation created</div>";
 </div>
 
 <div class="mb-3">
-<label class="form-label">Guests</label>
+<label class="form-label">Number of Guests</label>
 <input type="number" name="number_of_guests" class="form-control" required>
 </div>
 
