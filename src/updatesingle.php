@@ -1,4 +1,5 @@
 <?php
+include 'header.php'; 
 include 'db.php';
 
 $a = $_GET['id'];
@@ -15,8 +16,6 @@ $row = mysqli_fetch_array($result);
         <div class="col">
             <label for="dish">Table Number:</label>
             <input type="number" class="form-control" placeholder="Table Number" name="table_number" min="1" required value="<?php echo $row['table_number']; ?>">
-        </div>
-        <div class="col">
                 <label for="dish">Dish:</label>
                 <select class="form-control" name="dish">
                     <option >Pizza</option>
@@ -34,18 +33,11 @@ $row = mysqli_fetch_array($result);
                     <option >Extra Cheese</option>
                     <option >Extra Whipping Cream</option>
                 </select>
-        </div>
-        <div class="col">
             <label for="dish">Quantity:</label>
             <input type="number" class="form-control" placeholder="Quantity" name="quantity" min="1" required value="<?php echo $row['quantity']; ?>">
-        </div>
-    </div>
     <br>
-    <div class="row">
-        <div class="col">
             <button type="submit" class="btn btn-primary" name="submit">Update Order</button>
         </div>
-
     </div>
 </form>
 
