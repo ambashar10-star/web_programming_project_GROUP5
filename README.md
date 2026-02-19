@@ -61,6 +61,6 @@ List and describe any forms that have been created as part of your project. Incl
 List any tables that you have created in the project work
 
 - Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-- Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 2 (Created By Nevindi Rathukumarage): Table Name: Order_list | Link to the related code file (github): https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/order_form.php | Link to the table (https://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_bbcap25_1&table=Order_list).
 - Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
