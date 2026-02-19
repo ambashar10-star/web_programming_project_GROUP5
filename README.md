@@ -44,6 +44,22 @@ Include more detailed information about Feature 1 here. Provide links to related
 
 Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
+  - Information about Feature 2: The Orders Management feature allows customers to make online orders using a reserved table number. Customers can submit their own orders by using the table number that they selected when submitting the reservations form, and apart from that, they must select a dish and quantity. Once the customer submits the form, it is stored in the Order_list table in MySQL. The user can update, delete, and read their orders if needed. This feature was implemented using PHP, MySQL, HTML, Bootstrap and JavaScript for validation, following the CRUD structure.
+
+  - links to related code files (github):
+    - create.php---> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/create.php
+    - delete.php--->https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/delete.php
+    - process.php--> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/process.php
+    - read.php-----> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/read.php
+    - update.php---> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/update.php
+    - updatesingle.php---> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/updatesingle.php
+   
+  - link to the feature (shell.hamk.fi):
+    - create.php---> https://shell.hamk.fi/~amk1005739/project/create.php
+    - delete.php---> https://shell.hamk.fi/~amk1005739/project/delete.php
+    - read.php-----> https://shell.hamk.fi/~amk1005739/project/read.php
+    - update.php---> https://shell.hamk.fi/~amk1005739/project/update.php
+    - updatesingle.php--> https://shell.hamk.fi/~amk1005739/project/updatesingle.php
 ### Feature 3
 
 Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
