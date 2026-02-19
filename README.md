@@ -51,7 +51,8 @@ List and describe any forms that have been created as part of your project. Incl
 
 - Form 1 (Created By Bashar Abdul Mumin): Form Name:
   -  Link to the related code file (github): https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/reservations.php
-  -  Link to the form (shell.hamk.fi). | Validations Applied
+  -  Link to the form (shell.hamk.fi):       https://shell.hamk.fi/~amk1012988/project/reservations.php
+  -  Validations Applied                     https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/style.js
 
   
 - Form 2: (Created By Nevindi Rathukumarage)
