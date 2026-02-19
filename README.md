@@ -23,7 +23,7 @@ In this section, list and describe the features or functionality that you are wo
 
 Include more detailed information about Feature 1 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
-  - information about Feature 1: The Reservations Management feature allows users to book tables in the restaurant system. Users can create a reservation by entering customer details such       as name, email, phone number, table number, reservation date, time and number of guests. The system stores the data in the MySQL reservations table. Users can view all reservations in a     table format, edit existing reservations and delete reservations if needed. JavaScript validation is used to check user input before submitting the form. This feature was implemented        using PHP, MySQL, HTML, Bootstrap and JavaScript following the CRUD structure taught in class
+  - information about Feature 1: The Reservations Management feature allows users to book tables in the restaurant system. Users can create a reservation by entering customer details such       as name, email, phone number, table number, reservation date, time and number of guests. The system stores the data in the MySQL reservations table. Administrators can view all reservations in a     table format, edit existing reservations and delete reservations if needed. JavaScript validation is used to check user input before submitting the form. This feature was implemented        using PHP, MySQL, HTML, Bootstrap and JavaScript following the CRUD structure taught in class
     
   - links to related code files (github):
     - create2.php---> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/create2.php
