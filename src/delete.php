@@ -1,5 +1,6 @@
 
 <?php
+include 'header.php'; 
 include 'db.php';
 
 // Get order ID from URL
@@ -9,7 +10,7 @@ $row = mysqli_fetch_array($result);
 ?>
 <html>
 <head>
-    <title>Delete Order</title>
+    <h2 class="text-center">Delete Order</h2>
 </head>
 <body>
 <form name="form" method="post" action="">
@@ -20,8 +21,7 @@ $row = mysqli_fetch_array($result);
         <div class="col">
             <label for="table_number">Table Number:</label>
             <input type="number" class="form-control" name="table_number" min="1" value="<?php echo $row['table_number']; ?>" required>
-        </div>
-        <div class="col">
+            
             <label for="dish">Dish:</label>
             <select name="dish" class="form-control" required>
                 <option value="">Select Dish</option>
@@ -40,15 +40,15 @@ $row = mysqli_fetch_array($result);
                 <option value="Extra Cheese">Extra Cheese</option>
                 <option value="Extra Whipping Cream">Extra Whipping Cream</option>
             </select>
-        </div>
-        <div class="col">
+            
             <label for="quantity">Quantity:</label>
             <input type="number" class="form-control" name="quantity" min="1" value="<?php echo $row['quantity']; ?>" required>
-        </div>
-    </div>
-</div>
+
 <br>
 <input type="submit" class="btn btn-danger" name="submit" value="Delete Order" onclick="return confirm('Are you sure?');">
+ </div>
+</div>
+</div>
 </form>
 
 <?php 
