@@ -41,8 +41,8 @@ List the database tables that are part of your project.
 - Table 2 (Created By Nevindi Rathukumarage): Order_list 
 - Table 3 (Created By Ahnaf Rahul):reviews
 
-> Include the ER Diagram of the database. 
-
+> Include the ER Diagram of the database.
+https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/ER_DIAGRAM.pdf
 ---
 
 ## Created Forms
