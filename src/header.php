@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="index.php">
         <img src="Images2/Logo2.jpg" alt="Logo">
       </a>
     </div>
@@ -31,19 +31,20 @@
  <!-- Navigation bar -->
     <div class="collapse navbar-collapse"  id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="index.html#menu1">Today's Special</a></li>
-            <li><a href="index.html#menu2">Main Course</a></li>
-            <li><a href="index.html#menu3">Desserts</a></li>
-            <li><a href="index.html#menu4">Beverages</a></li>
-            <li><a href="index.html#menu5">Add Onn</a></li>
+            <li><a href="index.php#menu1">Today's Special</a></li>
+            <li><a href="index.php#menu2">Main Course</a></li>
+            <li><a href="index.php#menu3">Desserts</a></li>
+            <li><a href="index.php#menu4">Beverages</a></li>
+            <li><a href="index.php#menu5">Add Onn</a></li>
           </ul>
         </li>
-        <li class="tablink"><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="reservations.php">Reservations</a></li>
+        <li><a href="order_form.php">Order</a></li>
+        <li><a href="review.php">Reviews</a></li>
 
      <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Opening Hours<span class="caret"></span></a>
@@ -51,13 +52,6 @@
             <li><a href="#">Mon-Fri 	8.00 - 22.00</a></li>
             <li><a href="#">Sat 		 12.00 - 20.00</a></li>
             <li><a href="#">Sun 		 16.00 - 20.00</a></li>
-           </ul>
-        </li>
-     <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Eng/Fin<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Finnish</a></li>
-            <li><a href="#">English</a></li>
            </ul>
         </li>
       </ul>
