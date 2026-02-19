@@ -1,4 +1,5 @@
 <?php
+include 'header.php'; 
 include 'db.php'; 
 $sql = "SELECT * FROM Order_list";
 $result = $conn->query($sql);
