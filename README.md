@@ -13,7 +13,7 @@
 
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
-- [ ] Feature 1 (Full Name): Title of the feature. 
+- [ ] Feature 1 (Full Name: BASHAR ABDUL MUMIN): Title of the feature: Reservations Management 
 - [ ] Feature 2 (Full Name): Title of the feature.
 - [ ] Feature 3 (Full Name): Title of the feature.
 
@@ -22,6 +22,23 @@ In this section, list and describe the features or functionality that you are wo
 ### Feature 1
 
 Include more detailed information about Feature 1 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+
+  - information about Feature 1: The Reservations Management feature allows users to book tables in the restaurant system. Users can create a reservation by entering customer details such       as name, email, phone number, table number, reservation date, time and number of guests. The system stores the data in the MySQL reservations table. Users can view all reservations in a     table format, edit existing reservations and delete reservations if needed. JavaScript validation is used to check user input before submitting the form. This feature was implemented        using PHP, MySQL, HTML, Bootstrap and JavaScript following the CRUD structure taught in class
+    
+  - links to related code files (github):
+    - create2.php---> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/create2.php
+    - delete2.php--->https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/delete2.php
+    - process2.php--> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/process2.php
+    - read2.php-----> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/read2.php
+    - update2.php---> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/update2.php
+    - updatesingle2.php---> https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/updatesingle2.php
+
+  - link to the feature (shell.hamk.fi):
+    - create.php--->  https://shell.hamk.fi/~amk1012988/project/create2.php
+    - delete2.php---> https://shell.hamk.fi/~amk1012988/project/delete2.php
+    - read2.php-----> https://shell.hamk.fi/~amk1012988/project/read2.php
+    - update2.php---> https://shell.hamk.fi/~amk1012988/project/update2.php
+    - updatesingle2.php--> https://shell.hamk.fi/~amk1012988/project/updatesingle2.php
 
 ### Feature 2
 
