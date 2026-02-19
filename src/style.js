@@ -28,17 +28,19 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-    function validatingForm(){
-        let table_number = document.forms["form"]["table_number"].value;
-        let quantity = document.forms["form"]["quantity"].value;
 
-        if(table_number == ""){
-            alert("Table Number must be filled out");
-            return false;
-        }
-            if(quantity == ""){
-            alert("Quantity must be filled out");
-            return false;
-        }
+    
+    /* CHARACTER COUNTER */
+    const commentBox = document.getElementById('comment');
+    const charCount = document.getElementById('charCount');
+
+    if (commentBox && charCount) {
+        commentBox.oninput = function() {
+            let length = this.value.length;
+            charCount.innerHTML = length + " / 200 characters";
+
+            this.style.color = length > 200 ? "red" : "black";
+        };
     }
+});
 
