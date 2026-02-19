@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-<h1 class="text-center">Place Your Order:</h1>
+<h2 class="text-center">Place Your Order:</h2>
 <form name="form" method="post" action="process.php" onsubmit="return validatingForm()">
     <div class='form-floating'>
          <div class="row">
