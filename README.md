@@ -49,7 +49,8 @@ List the database tables that are part of your project.
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-- Form 1 (Created By Bashar Abdul Mumin): Form Name:
+- Form 1 (Created By Bashar Abdul Mumin):
+  -  Form Name:reservations.php
   -  Link to the related code file (github): https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/reservations.php
   -  Link to the form (shell.hamk.fi):       https://shell.hamk.fi/~amk1012988/project/reservations.php
   -  Validations Applied                     https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/style.js
