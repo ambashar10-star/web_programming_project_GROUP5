@@ -22,3 +22,14 @@ CREATE TABLE Order_list(
     FOREIGN KEY (table_number) REFERENCES reservations(table_number)
     ON DELETE CASCADE
 );
+
+--reviews Table
+CREATE TABLE reviews (
+    review_id INT AUTO_INCREMENT PRIMARY KEY,
+    table_number INT NOT NULL,
+    rating INT NOT NULL CHECK (rating BETWEEN 1 AND 5),
+    comment TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (table_number) REFERENCES reservations(table_number)
+    ON DELETE CASCADE
+);
