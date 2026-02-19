@@ -15,7 +15,7 @@ In this section, list and describe the features or functionality that you are wo
 
 - [ ] Feature 1 (Full Name: BASHAR ABDUL MUMIN): Title of the feature: Reservations Management 
 - [ ] Feature 2 (Full Name: Nevindi Rathukumarage): Title of the feature: Orders Management
-- [ ] Feature 3 (Full Name): Title of the feature.
+- [ ] Feature 3 (Full Name: Ahnaf Rahul): Title of the feature: Review Management
 
 > Add features as required. 
 
@@ -96,7 +96,11 @@ List and describe any forms that have been created as part of your project. Incl
    - Validations Applied:                    https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/style.js
 
   
-- Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- Form 3: (Created By Ahnaf Rahul):
+-  Form Name: review.php
+-  Link to the related code file (github):  https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/review.php
+-  Link to the form (shell.hamk.fi):        http://shell.hamk.fi/~amk1010114/project/review.php
+-  Validations Applied:                     https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/style.js
 
 
 ---
@@ -116,5 +120,7 @@ List any tables that you have created in the project work
 
 
   
-- Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 3 (Created By Ahnaf Rahul): Table Name reviews 
+-  Link to the related code file (github):https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/db.sql
+-  Link to the table (shell.hamk.fi).     http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_bbcap25_1&table=reviews
 
