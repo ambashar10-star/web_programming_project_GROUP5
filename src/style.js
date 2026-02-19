@@ -44,3 +44,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+/* REVIEW VALIDATION FUNCTION */
+function validateReview() {
+
+    let comment = document.getElementById('comment');
+    let resId = document.getElementById('table_number');
+    let msgBox = document.getElementById('js-message');
+
+    if (!comment || !resId) return true;
+
+    if (resId.value <= 0) {
+        msgBox.innerHTML = "<p class='alert alert-warning'>Please enter a valid Reservation ID.</p>";
+        return false;
+    }
+
+    if (comment.value.length < 10) {
+        msgBox.innerHTML = "<p class='alert alert-warning'>Comment must be at least 10 characters long.</p>";
+        return false;
+    }
+
+    return true;
+}
