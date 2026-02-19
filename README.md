@@ -72,8 +72,8 @@ List and describe any forms that have been created as part of your project. Incl
 List any tables that you have created in the project work
 
 - Table 1 (Created By BASHAR ABDUL MUMIN): Table Name: reservations
-- Link to the related code file (github):  https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/db.sql
-- Link to the table (shell.hamk.fi).       https://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_bbcap25_1&table=reservations
+    - Link to the related code file (github):  https://github.com/ambashar10-star/web_programming_project_GROUP5/blob/main/src/db.sql
+    - Link to the table (shell.hamk.fi).       https://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_bbcap25_1&table=reservations
 
   
 - Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
