@@ -51,8 +51,10 @@ if (isset($_POST['submit'])) {
     $query = mysqli_query($conn, "UPDATE Order_list SET table_number='$table_number', dish='$dish', quantity='$quantity' WHERE order_id='$a'");
 
     if ($query) {
-        echo "<h2>Order updated successfully!</h2>";
-        echo "<a href='update.php'>Check Updated List</a>";
+        echo '<h3 class="text-center">Order updated successfully!</h3>';
+        echo '<div class="text-center" >
+        <a href="update.php">Check Updated List</a>
+        </div>';
     } else {
         echo "Record Not modified: " . mysqli_error($conn);
     }
@@ -62,7 +64,7 @@ if (isset($_POST['submit'])) {
 if (isset($_POST['delete'])) {
     $query = mysqli_query($conn, "DELETE FROM Order_list WHERE order_id='$a'");
     if ($query) {
-        echo "<h2>Order deleted with id: $a</h2>";
+        echo '<h3 class="text-center">Order deleted with id: $a</h3>';
         // Optional: redirect to orders page
         header("Location: orders.php");
     } else {
